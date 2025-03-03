@@ -22,6 +22,6 @@ class Circulo:
         turtle.done()
 
 centro = Punto(0, 0)
-circulo = Circulo(centro, 100)
+circulo = Circulo(centro, 5)
 print(circulo)
 circulo.dibujaCirculo()

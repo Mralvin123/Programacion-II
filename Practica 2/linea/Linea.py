@@ -20,7 +20,7 @@ class Linea:
         t.goto(self.p2.x, self.p2.y)
         turtle.done()
 
-punto_a = Punto(0, -100)   
+punto_a = Punto(0, 0)   
 punto_b = Punto(50, 50)
 linea = Linea(punto_a, punto_b)
 print(linea)
