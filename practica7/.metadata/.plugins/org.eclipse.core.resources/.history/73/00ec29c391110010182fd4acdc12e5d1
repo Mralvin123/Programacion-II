@@ -1,0 +1,32 @@
+package juego1;
+
+public class Juego {
+    protected int numeroDeVidas;
+    protected int record;
+
+    public Juego() {
+        this.numeroDeVidas = 0;
+        this.record = 0;
+    }
+
+    public void reiniciaPartida() {
+        this.numeroDeVidas = 3;
+    }
+
+    public void actualizaRecord() {
+        if (numeroDeVidas > record) {
+            record = numeroDeVidas;
+            System.out.println("¡Nuevo récord!");
+        }
+    }
+
+    public boolean quitaVida() {
+        numeroDeVidas--;
+        if (numeroDeVidas <= 0) {
+            System.out.println("No te quedan más vidas. ¡Perdiste!");
+            return false;
+        }
+        return true;
+    }
+}
+

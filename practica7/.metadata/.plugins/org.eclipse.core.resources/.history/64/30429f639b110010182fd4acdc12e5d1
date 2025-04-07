@@ -1,0 +1,22 @@
+package juego2;
+
+public class JuegoAdivinaImpar extends JuegoAdivinaNumero {
+
+    public JuegoAdivinaImpar(int vidas) {
+        super(vidas);
+    }
+
+    @Override
+    public boolean validaNumero(int numero) {
+        if (numero >= 0 && numero <= 10) {
+            if (numero % 2 != 0) {
+                return true;
+            } else {
+                System.out.println("El número no es impar.");
+                return false;
+            }
+        }
+        return false;
+    }
+}
+
