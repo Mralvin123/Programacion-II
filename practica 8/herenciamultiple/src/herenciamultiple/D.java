@@ -72,7 +72,7 @@ public class D implements A, B {
     }
 
     public static void main(String[] args) {
-        D obj = new D(2, 3, 4);
+        D obj = new D(1, 2, 3);
         obj.incrementaXYZ();
         obj.mostrar();
     }
