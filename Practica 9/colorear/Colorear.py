@@ -10,20 +10,15 @@ class Coloreado(ABC):
 class Figura(ABC):
     def __init__(self, color="sin color"):
         self.color = color
-
     def setColor(self, color):
         self.color = color
-
     def getColor(self):
         return self.color
-
     def __str__(self):
         return f"Color: {self.color}"
-
     @abstractmethod
     def area(self):
         pass
-
     @abstractmethod
     def perimetro(self):
         pass
@@ -74,4 +69,4 @@ for figura in figuras:
     print(f"Perímetro: {figura.perimetro():.2f}")
     if tipo == 1:
         print(f"Como colorear: {figura.comoColorear()}")
-    print("*"*5+"-" * 30+"*"*5)
+    print("*"*40)
